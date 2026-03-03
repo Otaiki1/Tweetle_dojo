@@ -155,11 +155,11 @@ export function TournamentGamePage() {
   return (
     <div className="flex-1 flex flex-col">
       {/* Header */}
-      <div className="bg-bg-surface px-4 py-3 text-center">
-        <h2 className="font-heading text-base text-text-primary">
+      <div className="bg-bg-surface/40 backdrop-blur-md px-4 py-4 text-center border-b border-white/5 shadow-lg">
+        <h2 className="font-heading text-lg text-text-primary uppercase tracking-widest">
           Tournament #{tournamentId}
         </h2>
-        <p className="text-brand text-xs font-semibold tracking-[2px]">
+        <p className="text-accent text-[10px] font-heading tracking-[0.3em] mt-1 opacity-80 uppercase">
           ZK-VERIFIED MODE
         </p>
       </div>
@@ -175,8 +175,8 @@ export function TournamentGamePage() {
       {/* Board */}
       <div className="flex-1 flex flex-col items-center justify-center py-4">
         {guesses.length === 0 && currentGuess.length === 0 && (
-          <p className="text-text-muted text-sm font-semibold tracking-wider mb-3">
-            MAKE YOUR FIRST GUESS!
+          <p className="text-accent text-xs font-heading tracking-[0.3em] mb-4 drop-shadow-[0_0_8px_rgba(255,217,61,0.4)] uppercase">
+            Make your first guess!
           </p>
         )}
         <WordleBoard board={board} />
