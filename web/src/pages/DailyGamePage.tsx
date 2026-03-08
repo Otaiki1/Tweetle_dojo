@@ -307,7 +307,7 @@ export function DailyGamePage() {
       </div>
 
       {/* Keyboard */}
-      <div className="pb-4 max-w-lg mx-auto w-full">
+      <div className="lg:pb-6 pb-32 max-w-lg mx-auto w-full sticky bottom-0 lg:static lg:bottom-auto">
         <Keyboard
           keyStates={keyStates}
           onKeyPress={handleKeyPress}
